@@ -1,0 +1,115 @@
+﻿* Git
+   * Removes the need to copy files from your drive to other collaborative folders
+      * Like using your camera to take a snapshot of your files at a specific point in time that you can magically go back to if terrible things happen
+      * Similar to the wayback machine (but for code)
+      * Checkpoints for your files
+   * Made to modify/change/break/improve our code and make sure we cannot ruin it too much by creating save points along the way
+   * A collaboration tool that allows different people to work on all the parts of a project at the same time (locally and worldwide)
+   * A tool that protects yourself from yourself and others
+* The Local Workflow
+   * Make a folder in your drive
+   * Type “cmd” in the address bar
+   * Cmd prompt should open to the folder it was opened in
+   * Tell git to watch the folder by initializing it “git init”
+      * Git init makes a repository in the folder you ran the command on (often shorted to “repo”)
+         * This is the hidden location where the checkpoints will be stored
+   * The information will exist in three main states
+      * Modified
+         * Files that are new / have changes not yet saved by Git
+      * Staged
+         * The current version of a file, tagged to be included in the next commit
+      * Committed
+         * Files safely stored by Git
+   * To check the files’ status, type in “git status” (the file should be red)
+   * To add the file into the Git folder, type in “git add (file name)”
+      * If you got no formal response, you did good
+   * “Git add” neatly packs a copy of the file and stores it somewhere for until the folder is deleted
+   * Do “git status” again (the file should be green)
+   * Commit it to storage
+      * “ Git commit -m “(description here ex. Typo on like 25 changed)” ”
+   * Git commit physically moves the box of copies into long-term storage,  so describe what’s in the box just in case you need it
+      * It does NOT move or remove files in your working directory
+   * When changes are made:
+      * Git status
+         * If it notices a change in the file…
+      * Git add (filename)
+         * Once added…
+      * Git commit -m “(description)”
+   * “Git commit”
+      * Shows the list of changes logged
+      * Also lists the unique name for it
+   * “Git add .”
+      * adds all of the files at once
+* Outcomes
+   * Setup a Remote repository
+   * Learn how to Push our local files to the remote server
+   * Understand Branches and how to use them
+   * Understand how to Merge different branches
+   * Learn what a Merge Conflict  is and how to resolve it
+* Remote Repository
+   * A copy of our project stored “in the cloud”
+   * Where we backup our work and share it with others
+   * Accessible anywhere there’s an internet connection
+* To set up a Git Repository
+   * “Cd” all the way to your project file
+   * “Git status”
+   * “Git add .”
+   * “Git commit -m “first commit”
+   * “Git remote add origin (web address to the thing here)”
+   * “Git push -u origin master”
+* Git push
+   * Tells git to upload all your changes to the server
+   * Does not need to be done after every commit, because it will upload all commits since the last push
+* Branches
+   * Smaller bits extending from a tree trunk
+   * Represent different versions of our code
+   * Allow us to work on code fixes and features without breaking what we already have (presumably) working
+   * Fixes and new features should always start on a branch
+* The Master branch
+   * Is the “trunk” of your code tree
+      * Should only contain CLEAN code ready for deployment (use on the web)
+* “Git branch (name)”
+   * Tells git to maintain a new copy of our code with the given name
+* “Git branch”
+   * Will list the branches available and display an asterisk next to the one we are currently working on
+* “Git checkout (branch)”
+   * Tells git to switch our working folder to the branch name specified
+* Working with branches
+   * Make a new branch to not break the current code
+      * “Git branch (name)”
+   * Switch to the new branch
+      * “Git checkout (name)”
+* Committing new stuff from a new branch
+   * Add
+   * Commit
+   * Add.
+   * Git push
+   * (copy with “git push” command they show)
+* To switch back to the master branch
+   * Git checkout master
+* MERGING CHANGES TOGETHER
+   * Use merge command
+      * Git checkout master
+      * Git merge (other branch name)
+* You can branch from a branch
+* Merge Conflict
+   * When a file has changed in both of the branches you are trying to combine and git can’t automatically determine what you want to keep
+   * Basically, git is asking for help because it’s confused
+      * Note the line where the line conflicts occur
+      * Git add .
+      * Git commit -m
+      * Check the file and remove the code you don’t want
+
+
+
+
+
+
+
+
+        This will encourage collaboration by making teams talk with one another about the changes actively being made in the documents. Not only that, but we can also work on our own within our separate branches. What needs to be observed is that the individuals in the teams don’t try to jump too far ahead from the other members and keep them all on the same page.
+        Remote Repos: 4
+        Branches: 4
+        Merging: 4
+        I have no other questions.
+        The best part of my Thanksgiving break was getting to spend some time with my Dad and have Thanksgiving at my Grandparents’ house. They had great food and encouraged me to do something in the music field since they were saying I have potential!
