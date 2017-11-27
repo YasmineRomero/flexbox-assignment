@@ -37,3 +37,7 @@
 .box8, .box9, .box10 {
     width: 32.9%;
 }
+
+@media screen and (max-width: 480px) {
+	
+}
